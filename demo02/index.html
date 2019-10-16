@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        /* 动态伪类选择器，他常常用在a标签中 */
+        a:link {
+            color: #666
+        }
+
+        a:visited {
+            color: #f00
+        }
+
+        a:hover {
+            color: #000
+        }
+
+        a:active {
+            color: #0f0
+        }
+
+        /* UI元素状态伪类选择器 常常用在表单中 */
+        input:enabled {
+            background-color: #0f0;
+        }
+
+        input:disabled {
+            background-color: #f00;
+        }
+
+        input:checked {
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="">wuque</a>
+    <a href="">yinuo</a><br />
+    <hr>
+
+    <input type="text"><br />
+    <input type="text" disabled>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+#star{
+    width: 0;
+    height: 0;
+    border-bottom: 70px solid red;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    margin: 150px auto;
+    transform: rotate(35deg);
+    position: relative;
+}
+
+#star::before{
+    content: '';
+    position: absolute;
+    border-bottom: 80px solid red;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    transform: rotate(-35deg);
+    top: -45px;
+    left: -65px;
+}
+
+#star::after{
+    content: '';
+    position: absolute;
+    border-bottom: 70px solid red;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    transform: rotate(-70deg);
+    top: 3px;
+    left: -105px;
+}

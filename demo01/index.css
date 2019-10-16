@@ -1,0 +1,10 @@
+/* vs code 自动补全css浏览器兼容前缀相关链接
+https://blog.csdn.net/qq_39252501/article/details/83416835 */
+
+.kit {
+    -webkit-transform: inherit;
+       -moz-transform: inherit;
+        -ms-transform: inherit;
+         -o-transform: inherit;
+            transform: inherit;
+}

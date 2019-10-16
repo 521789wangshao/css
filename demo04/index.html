@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>伪元素</title>
+    <style type="text/css">
+        .demo {
+            border: 1px solid #ccc;
+            width: 300px;
+            margin: 50px auto;
+            padding: 10px;
+        }
+
+        .demo::first-letter {
+            font-size: 40px;
+            font-weight: bold;
+            float: left;
+        }
+
+        .demo::first-line {
+            color: #00f;
+        }
+
+        .demoafter {
+            border: 1px solid #ccc;
+            width: 500px;
+            margin: 10px auto;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .demoafter::before {
+            content: url(./demo01.jpg);
+            display: block;
+        }
+
+        .demoafter::after {
+            content: url(./demo04.jpg);
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo">
+        伪元素css
+        的伪元素，之所以被称为伪元素，是因为他们不是真正的页面元素，html没有对应的元素，但是其所有用法和表现行为与真正的页面元素一样，可以对其使用诸如页面元素一样的css样式，表面上看上去貌似是页面的某些元素来展现，实际上是css样式展现的行为，因此被称为伪元素。如下图，是伪元素在html代码机构中的展现，可以看出无法伪元素的结构无法审查。
+    </div>
+    <div class="demoafter">
+        玩转CSS新特性
+    </div>
+</body>
+
+</html>
