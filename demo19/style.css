@@ -7,6 +7,7 @@
    transition-property: all;
    transition-delay: .1s;
    transition-timing-function: ease-out;
+   /* transition: all 2s .2s step-end; */
 }
 .ceng:hover{
    width: 300px;
